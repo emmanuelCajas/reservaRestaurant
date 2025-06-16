@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css header */
+.cabecera {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    background-color: #232530;
+    color: white;
+    padding: 10px 30px;
+    height: auto;
+    width: 100%;
+}
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: auto;
+    width: 50px;
+    margin-right: 8px;
+}
+
+/* logo y nav responsive */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 30px; 
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        background-color: #232530;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .cabecera {
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        width: 100%; 
+    }
+
+    .nav-item {
+        padding: 5px 0; 
+    }
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: white;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Hace que el icono sea blanco */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: 0.3s;
+    margin-left: 50px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 174, 0);
+    text-decoration: underline;
+}
+
+/* css home */
+.title-res {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 1.25em 0.6em;
+}
+.carousel-item img {
+    width: 100%;  
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%; /* Ajusta el tamaño del área de clic */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3em; /* Tamaño del icono */
+    height: 3em;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Hace que los botones sean redondos */
+    padding: 0.6em;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.8); /* Más oscuro al pasar el mouse */
+}
+
+.descripcion-cuadro {
+    font-family: "Roboto", sans-serif;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 40em;
+}
+
+.descripcion-cuadro > p {
+    font-size: 1.5em;
+}
+
+.pdf-container {
+    height: 900px; 
+    overflow: hidden;
+}
+
+.iframe-pdf {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* css registro */
+
+.tituloSeccion {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    color: black;
+    /*background-color: rgb(0, 4, 255);*/
+}
+
+.containerRegistro {
+
+    margin: 75px auto;
+}
+
+.form-control {
+    
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    height: clamp(3vh, 60px, 60px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    padding-left: 10px;
+}
+
+#botonEnviar {
+   
+    height: clamp(3vh, 60px, 60px);
+    border: 2px solid black;
+    background-color: #EDCB9C;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
+    text-align: center;
+    color: black;
+   
+
+}
+
+/* Efecto hover */
+input:hover {
+    
+    border-color: rgb(0, 200, 200); /* Cambia el borde */
+    background-color: rgba(0, 200, 200, 0.1); /* Fondo ligeramente coloreado */
+    transition: 0.3s ease-in-out; /* Efecto suave */
+}
+
+#botonEnviar:hover {
+
+    border-color: rgb(0, 200, 200); /* Cambia el borde */
+    background-color: rgba(0, 200, 200, 0.1); /* Fondo ligeramente coloreado */
+    transition: 0.3s ease-in-out; /* Efecto suave */
+}
+
+/* css footer */
+@media (max-width: 768px) {
+    .pie footer {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .pie .nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.pie {
+    background-color: #232530;
+    color: white;
+    padding: 10px 30px;
+    height: auto;
+    width: 100%;
+}
+
+.bi {
+    font-size: 20px;
+}
+
+.error {
+    color: red;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* css registroSatisfactorio */
+.mensajes {
+    font-family: "Roboto", sans-serif;
+    margin-top: 130px;
+}
+
+.mensajes a {
+    color: white;
+    background-color: #232530;
+}
+
+.mensajes a:hover {
+    background-color: white;
+    border: 2px solid black;
+}
